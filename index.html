@@ -1,43 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morgenrot Studio | Home</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Morgenrot Studio: A personal portfolio">
 </head>
-
 <body>
 
+    <!-- HEADER -->
     <header>
-
-        <div class="logo">
-            <img src="images/Morgenrot LogoV3.png" alt="Morgenrot Studio Logo">
+        <div class="header-left">
+            <a href="index.html"><img src="Images/Logo (2).png" alt="Morgenrot Studio Logo" class="logo-img"></a>
             <h1>Morgenrot Studio</h1>
         </div>
 
-        <nav>
-            <ul>
+        <!-- Nav menu -->
+        <nav class="header-nav" aria-label="Main navigation">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
-
-        <section class="hero">
-
-
-            <div class="hero-text">
+    <!-- HERO SECTION -->
+    <section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
                 <h2>Creative Design Inspired by Every Sunrise</h2>
 
                 <p>
@@ -50,52 +48,47 @@
 
         </section>
 
-        <section class="about">
 
-            <h2>Welcome</h2>
+    <!-- INTRO SECTION -->
+<section class="intro">
+    <h2>Introduction</h2>
 
-            <p class="intro">
-                Every project begins with an idea. Through thoughtful design, color, and
-                creativity, I enjoy transforming concepts into meaningful visual experiences.
-                This portfolio showcases coursework, personal projects, and creative explorations
-                that reflect my growth as a graphic designer.
-            </p>
+    <p>
+        <span class="accent-text">Welcome to Morgenrot Studio.</span><br>
+        Every project begins with an idea. Through thoughtful design, color, and creativity, I enjoy transforming concepts into meaningful visual experiences.
+    </p>
 
-        </section>
+    <p>
+        My work explores branding, typography, and digital illustration, focusing on how visual communication can tell a story and create emotional impact. I am especially interested in how simple design choices, such as composition, hierarchy, and color, can completely change the way a message is understood.
+    </p>
 
-        <section class="featured">
+    <p>
+        This portfolio showcases coursework, personal projects, and creative experiments that reflect my growth as a designer. Each piece represents a step in my development as I continue to refine my skills and explore new visual styles.
+    </p>
+</section>
 
-            <h2>Featured Projects</h2>
-
-            <div class="featured-grid">
-
-                <article>
-                    <img src="images/EoELogo.png" alt="Branding Project">
-                    <h3>Branding - Echoes of Earth</h3>
-                </article>
-
-                <article>
-                    <img src="images/heimat.png" alt="Illustration project">
-                    <h3>Illustration - Heimat</h3>
-                </article>
-
-                <article>
-                    <img src="images/Anxiety.jpg" alt="Typography project">
-                    <h3>Typography - Visual Representation</h3>
-                </article>
-
+        <!-- FEATURED IMAGES PREVIEW -->
+        <section class="preview">
+            <h2>Check out my work!</h2>
+            <div class="preview-row">
+                <div class="preview-box">
+                    <img src="Images/EoELogo.png" alt="A Logo I designed" class="preview-img" data-full="Images/EoELogo.png">
+                </div>
+                <div class="preview-box">
+                    <img src="Images/Anxiety.jpg" alt="Typography study" class="preview-img" data-full="Images/Anxiety.jpg">
+                </div>
+                <div class="preview-box">
+                    <img src="Images/heimat.png" alt="Book Cover: Heimat" class="preview-img" data-full="Images/heimat.png">
+                </div>
             </div>
-
         </section>
 
-    </main>
 
+
+    <!-- FOOTER -->
     <footer>
-
-        <p>&copy; 2026 Morgenrot Studio. All Rights Reserved.</p>
-
+        <p>© 2026 Morgenrot Studio. All Rights Reserved.</p>
     </footer>
 
 </body>
-
 </html>
