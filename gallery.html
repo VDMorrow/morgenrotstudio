@@ -1,87 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morgenrot Studio | Gallery</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Morgenrot Studio: A personal portfolio">
 </head>
-
 <body>
 
-<header>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <a href="index.html"><img src="Images/Logo (2).png" alt="Morgenrot Studio Logo" class="logo-img"></a>
+            <h1>Morgenrot Studio</h1>
+        </div>
 
-    <div class="logo">
-        <img src="images/Morgenrot LogoV3.png" alt="Morgenrot Studio Logo">
-        <h1>Morgenrot Studio</h1>
-    </div>
+        <!-- Nav menu -->
+        <nav class="header-nav" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
 
-</header>
 
+<!-- Main Content -->
 <main>
 
-<section class="gallery-header">
+    <section class="gallery">
 
-    <h2>Portfolio Gallery</h2>
+        <h3 class="gallery-category">Branding</h3>
 
-    <p>
-        Explore a collection of branding, typography, illustration,
-        motion graphics, and other creative projects.
-    </p>
+        <div class="gallery-grid">
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Branding Project 1" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
 
-</section>
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Branding Project 2" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
 
-<section class="gallery-grid">
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Branding Project 3" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
+        </div>
 
-    <article>
-        <img src="images/project1.jpg" alt="Brand Identity Project">
-        <h3>Brand Identity</h3>
-    </article>
+        <h3 class="gallery-category">Typography</h3>
 
-    <article>
-        <img src="images/project2.jpg" alt="Typography Project">
-        <h3>Typography</h3>
-    </article>
+        <div class="gallery-grid">
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Typography Project 1" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
 
-    <article>
-        <img src="images/project3.jpg" alt="Illustration Project">
-        <h3>Illustration</h3>
-    </article>
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Typography Project 2" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
 
-    <article>
-        <img src="images/project4.jpg" alt="Motion Graphics Project">
-        <h3>Motion Graphics</h3>
-    </article>
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Typography Project 3" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
+        </div>
 
-    <article>
-        <img src="images/project5.jpg" alt="Poster Design">
-        <h3>Poster Design</h3>
-    </article>
+        <h3 class="gallery-category">Digital Design</h3>
 
-</section>
+        <div class="gallery-grid">
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Digital Design Project 1" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
+
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Digital Design Project 2" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
+
+            <div class="gallery-box">
+                <img src="Images/THM_Flowers.jpg" alt="Digital Design Project 3" class="gallery-img" data-full="Images/Flat.jpg">
+            </div>
+        </div>
+
+    </section>
 
 </main>
 
-<footer>
+<!-- Modal / Lightbox -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" src="#" alt="modal content">
+    <div id="caption"></div>
+</div>
 
-<p>&copy; 2026 Morgenrot Studio. All Rights Reserved.</p>
 
-</footer>
+    <!-- FOOTER -->
+    <footer>
+    <p>© 2025 Vanessa Morrow. All rights reserved.</p>
+    </footer>
+
+<!-- Java Scripts -->
+<script src="Scripts/script.js"></script>
 
 </body>
-
 </html>
