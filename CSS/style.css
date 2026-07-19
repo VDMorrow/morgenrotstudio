@@ -119,7 +119,7 @@ p {
 .hero {
     text-align: center;
     color: white;
-    padding: 5rem 2rem;
+    padding: 3.5rem 2rem;
     background: linear-gradient(
         135deg,
         var(--blue) 0%,
@@ -132,7 +132,7 @@ p {
 
 .hero h2 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .hero p {
@@ -143,8 +143,9 @@ p {
 /* ---------- Intro Section ---------- */
 
 .intro {
-    text-align: center;
+    text-align: left;
     padding: 60px 20px;
+    line-height: 1.8;
 }
 
 .intro .accent-text,
@@ -463,4 +464,128 @@ footer {
     .hero h2 {
         font-size: 2.5rem;
     }
+}
+
+/* ---------- Contact Page ---------- */
+
+.contact-intro {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.contact-intro h2 {
+    color: var(--blue);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 60px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    font-family: 'Cinzel', serif;
+    color: var(--blue);
+    font-weight: 600;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--orange);
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--red);
+}
+
+/* ---------- Contact Table ---------- */
+
+.contact-table {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-table h2 {
+    color: var(--blue);
+    margin-bottom: 25px;
+}
+
+.contact-table table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-table th {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+}
+
+.contact-table td {
+    background-color: var(--white);
+    padding: 15px;
+    font-family: 'Source Sans 3', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.contact-table tr:last-child td {
+    border-bottom: none;
 }
